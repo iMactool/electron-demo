@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP -->
+     <!-- 禁止内联样式，增加安全性 -->
+     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>First App</title>
+    <link rel="stylesheet" href="./mycss.css">
+</head>
+<body>
+    <h1>你好!欢迎使用智慧平台</h1>
+    <p class="pstyle">本软件构建依赖如下：</p>
+     Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    和 Electron <span id="electron-version"></span>.
+
+    <div class="divcss">
+        <ul>
+            <li>注意📢：这里是白色的字体</li>
+            <li>🆚比如这里😁</li>
+            <li>测试一下</li>
+        </ul>
+    </div>
+
+    <!-- 您也可以此进程中运行其他文件 -->
+    <script src="./renderer.js"></script>
+
+   
+
+</body>
+</html>
